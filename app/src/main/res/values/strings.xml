@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaiMai Song List</string>
+    <string name="msl_song_desc">%s - bpm:%s | notes:%s</string>
+    <string name="msl_congratulations">恭喜您又飞升了！</string>
+    <string name="msl_congratulations_ap">收了！恭喜您！</string>
+    <string name="msl_search_hint">输入曲名/部分曲名查询</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/msl_select_rank_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/rankS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:src="@drawable/msl_rank_s" />
+
+    <ImageView
+        android:id="@+id/rankSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/msl_rank_ss" />
+
+    <ImageView
+        android:id="@+id/rankSSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/msl_rank_sss" />
+
+    <ImageView
+        android:id="@+id/rankAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/msl_rank_ap" />
+
+    <ImageView
+        android:id="@+id/rankCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:scaleX="0.7"
+        android:scaleY="0.6"
+        android:src="@drawable/msl_rank_cancel" />
+</LinearLayout>

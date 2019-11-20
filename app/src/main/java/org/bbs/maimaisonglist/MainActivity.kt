@@ -1,9 +1,11 @@
 package org.bbs.maimaisonglist
 
 import android.animation.*
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.view.animation.LinearInterpolator
+import android.view.inputmethod.InputMethodManager
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.addListener
@@ -72,8 +74,11 @@ class MainActivity : AppCompatActivity() {
                 searchButton.setImageResource(R.drawable.msl_search_button_bg_highlight)
                 animateSearchTransIn()
             } else {
+                searchInput.text = null
                 searchButton.setImageResource(R.drawable.msl_search_button_bg_default)
                 animateSearchTransOut()
+                songListAdapter?.search(String())
+                hideKeyboard()
             }
             300L
         }
@@ -214,12 +219,12 @@ class MainActivity : AppCompatActivity() {
             }
             addListener(
                 onStart = {
-                    searchInput.alpha = 1F
-                },
-                onEnd = {
                     val params = songList.layoutParams as RelativeLayout.LayoutParams
                     params.bottomMargin = 0
                     songList.layoutParams = params
+                    searchInput.alpha = 1F
+                },
+                onEnd = {
                     searchInput.visibility = View.GONE
                 })
             duration = 300L
@@ -228,6 +233,13 @@ class MainActivity : AppCompatActivity() {
             playTogether(fadeAnimator, transAnimator)
             duration = 300L
         }.start()
+    }
+
+    private fun hideKeyboard() {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE)
+        if (imm is InputMethodManager) {
+            imm.hideSoftInputFromWindow(searchInput.windowToken, 0)
+        }
     }
 
     private fun setupEarth() {

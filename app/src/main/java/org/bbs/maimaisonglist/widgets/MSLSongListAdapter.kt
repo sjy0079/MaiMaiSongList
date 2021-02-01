@@ -20,7 +20,7 @@ import org.bbs.maimaisonglist.utils.ImageUtils
 import org.bbs.maimaisonglist.utils.SpUtils
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-14
  */
 class MSLSongListAdapter : RecyclerView.Adapter<MSLSongListVH>() {

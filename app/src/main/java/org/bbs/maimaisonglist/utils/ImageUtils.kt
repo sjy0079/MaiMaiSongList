@@ -10,7 +10,7 @@ import com.bumptech.glide.request.target.SimpleTarget
 import io.reactivex.Observable
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-14
  */
 object ImageUtils {

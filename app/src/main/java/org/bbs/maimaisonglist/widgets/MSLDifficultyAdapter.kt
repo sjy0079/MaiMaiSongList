@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import org.bbs.maimaisonglist.model.MSLDifficultyData
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-13
  */
 class MSLDifficultyAdapter : RecyclerView.Adapter<MSLDifficultyVH>() {

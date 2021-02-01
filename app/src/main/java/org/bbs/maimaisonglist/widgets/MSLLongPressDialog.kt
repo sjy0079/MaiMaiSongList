@@ -7,7 +7,7 @@ import org.bbs.maimaisonglist.R
 import org.bbs.maimaisonglist.utils.SpUtils
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-15
  */
 class MSLLongPressDialog(context: Context) : Dialog(context) {

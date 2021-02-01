@@ -3,7 +3,7 @@ package org.bbs.maimaisonglist.utils
 import android.view.View
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-13
  */
 fun View.avoidDoubleClick(time: Long) {

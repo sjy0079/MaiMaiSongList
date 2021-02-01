@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import org.bbs.maimaisonglist.R
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-13
  */
 data class MSLDifficultyData(

@@ -4,7 +4,7 @@ import android.content.Context
 import org.bbs.maimaisonglist.MainApplication
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-13
  */
 object WindowUtils {

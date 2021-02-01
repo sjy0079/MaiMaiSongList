@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 import org.bbs.maimaisonglist.R
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-13
  */
 data class MSLSongData(

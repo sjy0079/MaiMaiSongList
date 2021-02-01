@@ -7,7 +7,7 @@ import org.bbs.maimaisonglist.utils.WindowUtils
 
 
 /**
- * @author shenjiayi@didiglobal.com
+ * @author BBS
  * @since  2019-11-14
  */
 class MSLSongPicDrawable(private val image: Bitmap, @ColorInt borderColor: Int) : Drawable() {
